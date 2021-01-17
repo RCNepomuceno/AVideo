@@ -680,7 +680,8 @@ function playNext(url) {
         $.toast("Looping video");
         userIsControling = false;
         playerPlayTimeout = setTimeout(function () {
-            playerPlay(currentTime);
+            //playerPlay(currentTime);
+            playerPlay(0);
         }, 200);
     }
 }
